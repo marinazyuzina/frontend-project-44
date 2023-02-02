@@ -1,11 +1,5 @@
 import readlineSync from 'readline-sync';
 
-// напишу пока ф-ю здесь, но потом она должна находиться в calc.js
-/* roundGenerator = () => {
-    const question = 'Question:';
-    let correctAnswer;
-    return [question, correctAnswer];
-}; */
 const gameLogic = (ruleOfGame, roundGenerator) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name?: ');
