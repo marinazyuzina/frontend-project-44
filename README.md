@@ -18,4 +18,4 @@
 <a href="https://asciinema.org/a/556846" target="_blank"><img src="https://asciinema.org/a/556846.svg" /></a>
 
 ### Brain-prime
-<a href="https://asciinema.org/a/557586" target="_blank"><img src="https://asciinema.org/a/557586.svg" /></a>
+<a href="https://asciinema.org/a/557604" target="_blank"><img src="https://asciinema.org/a/557604.svg" /></a>

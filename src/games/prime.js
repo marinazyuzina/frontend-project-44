@@ -3,15 +3,15 @@ import getRandomNum from '../getRandomNum.js';
 
 const ruleOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const isPrime = (num) => {
-  let result;
   if (num === 2) {
-    result = 'yes';
-  } else if (num % 2 === 0) {
-    result = 'no';
-  } else {
-    result = 'yes';
+    return 'yes';
   }
-  return result;
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return 'no';
+    }
+  }
+  return 'yes';
 };
 const roundGenerator = () => {
   const randomNum = getRandomNum(2, 50);
