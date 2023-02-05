@@ -1,4 +1,5 @@
 ### Hexlet tests and linter status:
+Description:
 
 [![Actions Status](https://github.com/marinazyuzina/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/marinazyuzina/frontend-project-44/actions)
 
