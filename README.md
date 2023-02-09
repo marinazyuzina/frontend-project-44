@@ -15,7 +15,7 @@ Brain Games - a set of five console games for brain training. Each game asks thr
 
 ## Install
 1. Install Node.js package or update to the latest version. 
-2. Clone the repository: type at the command line **git clone git@github.com:marinazyuzina/frontend-project-44.git**
+2. Clone the repository. Type at the command line: **git clone git@github.com:marinazyuzina/frontend-project-44.git**
 3. Change to the project directory: **cd frontend-project-44**
 4. Install the npm package: **npm install**
 5. Add dependencies: **make install**
