@@ -20,7 +20,7 @@ Brain Games - a set of five console games for brain training. Each game asks thr
 4. Install the npm package: **npm install**
 5. Add dependencies: **make install**
 6. Install the app: **npm link**
-Now you can start the game. Enter the name of any game at the command line:
+#### Now you can start the game. Enter the name of any game at the command line:
  
 ### brain-even
 <a href="https://asciinema.org/a/554328" target="_blank"><img src="https://asciinema.org/a/554328.svg" /></a>
