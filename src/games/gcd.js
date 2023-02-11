@@ -1,4 +1,4 @@
-import gameLogic from '../index.js';
+import runGame from '../index.js';
 import getRandomNum from '../getRandomNum.js';
 
 const ruleOfGame = 'Find the greatest common divisor of given numbers.';
@@ -19,14 +19,14 @@ const getNod = (num1, num2) => {
   }
   return nod;
 };
-const roundGenerator = () => {
-  const num1 = getRandomNum(1, 20);
-  const num2 = getRandomNum(1, 20);
-  const question = `${num1} ${num2}`;
-  const correctAnswer = `${getNod(num1, num2)}`;
+const generateRound = () => {
+  const randomNum1 = getRandomNum(1, 20);
+  const randomNum2 = getRandomNum(1, 20);
+  const question = `${randomNum1} ${randomNum2}`;
+  const correctAnswer = `${getNod(randomNum1, randomNum2)}`;
   return [question, correctAnswer];
 };
 const startGcdGame = () => {
-  gameLogic(ruleOfGame, roundGenerator);
+  runGame(ruleOfGame, generateRound);
 };
 export default startGcdGame;
