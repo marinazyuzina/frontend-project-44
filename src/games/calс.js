@@ -17,9 +17,12 @@ const calculateValue = (num1, operator, num2) => {
   }
 };
 
+const minNumber = 1;
+const maxNumber = 20;
+
 const generateRound = () => {
-  const randomNum1 = getRandomNum(1, 20);
-  const randomNum2 = getRandomNum(1, 20);
+  const randomNum1 = getRandomNum(minNumber, maxNumber);
+  const randomNum2 = getRandomNum(minNumber, maxNumber);
   const randomOperator = operators[getRandomNum(0, operators.length)];
   const question = `${randomNum1} ${randomOperator} ${randomNum2}`;
   const correctAnswer = `${calculateValue(randomNum1, randomOperator, randomNum2)}`;

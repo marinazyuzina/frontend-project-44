@@ -14,9 +14,14 @@ const isPrime = (num) => {
   return true;
 };
 const generateRound = () => {
-  const randomNum = getRandomNum(2, 50);
-  const question = `${randomNum}`;
-  const correctAnswer = (isPrime(randomNum)) ? 'yes' : 'no';
+  const minNumber = 2;
+  const maxNumber = 50;
+
+  const randomNumToShow = getRandomNum(minNumber, maxNumber);
+
+  const question = `${randomNumToShow}`;
+  const correctAnswer = (isPrime(randomNumToShow)) ? 'yes' : 'no';
+
   return [question, correctAnswer];
 };
 const startPrimeGame = () => {

@@ -20,10 +20,15 @@ const getNod = (num1, num2) => {
   return nod;
 };
 const generateRound = () => {
-  const randomNum1 = getRandomNum(1, 20);
-  const randomNum2 = getRandomNum(1, 20);
+  const minNumber = 1;
+  const maxNumber = 20;
+
+  const randomNum1 = getRandomNum(minNumber, maxNumber);
+  const randomNum2 = getRandomNum(minNumber, maxNumber);
+
   const question = `${randomNum1} ${randomNum2}`;
   const correctAnswer = `${getNod(randomNum1, randomNum2)}`;
+
   return [question, correctAnswer];
 };
 const startGcdGame = () => {

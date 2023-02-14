@@ -11,17 +11,24 @@ const getProgression = (randomNum, skippedCount, lengthOfProg) => {
 };
 
 const generateRound = () => {
-  const randomNum = getRandomNum(1, 30);
-  const skippedCount = getRandomNum(1, 5);
-  const lengthOfProg = getRandomNum(10, 20);
+  const minNumber = 1;
+  const maxNumber = 30;
+  const maxSkippedNumber = 5;
+  const minLengthOfProg = 10;
+  const maxLengthOfProg = 20;
+
+  const randomNum = getRandomNum(minNumber, maxNumber);
+  const skippedCount = getRandomNum(minNumber, maxSkippedNumber);
+  const lengthOfProg = getRandomNum(minLengthOfProg, maxLengthOfProg);
 
   const progressionArr = getProgression(randomNum, skippedCount, lengthOfProg);
   const randomIndex = getRandomNum(0, progressionArr.length);
-  const savedNum = progressionArr[randomIndex];
+  const correctAnswer = progressionArr[randomIndex];
   progressionArr[randomIndex] = '..';
+
   const question = progressionArr.join(' ');
-  const correctAnswer = String(savedNum);
-  return [question, correctAnswer];
+
+  return [question, String(correctAnswer)];
 };
 const startProgressionGame = () => {
   runGame(ruleOfGame, generateRound);
